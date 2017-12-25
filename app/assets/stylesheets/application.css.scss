@@ -2,28 +2,89 @@
  * This is a manifest file that'll be compiled into application.css, which will include all the files
  * listed below.
  *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
- * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
  *
  * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
  *
  *= require_tree .
  *= require_self
  */
+
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
-body{
-  background: #aa4847;
+body {
+font-family: 'Work Sans', sans-serif;
+
+	background: rgba(250,191,95,1);
+	background: -moz-linear-gradient(left, rgba(250,191,95,1) 0%, rgba(254,167,27,1) 49%, rgba(250,191,95,1) 100%);
+	background: -webkit-gradient(left top, right top, color-stop(0%, rgba(250,191,95,1)), color-stop(49%, rgba(254,167,27,1)), color-stop(100%, rgba(250,191,95,1)));
+	background: -webkit-linear-gradient(left, rgba(250,191,95,1) 0%, rgba(254,167,27,1) 49%, rgba(250,191,95,1) 100%);
+	background: -o-linear-gradient(left, rgba(250,191,95,1) 0%, rgba(254,167,27,1) 49%, rgba(250,191,95,1) 100%);
+	background: -ms-linear-gradient(left, rgba(250,191,95,1) 0%, rgba(254,167,27,1) 49%, rgba(250,191,95,1) 100%);
+	background: linear-gradient(to right, rgba(250,191,95,1) 0%, rgba(254,167,27,1) 49%, rgba(250,191,95,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fabf5f', endColorstr='#fabf5f', GradientType=1 );
+
+}
+/*F0691B
+F3842C
+FBDDC9
+129EBF
+F2C329
+63D6C8 */
+
+
+.review_title {
+	margin: 0 0 20px 0;
+}
+.reviews {
+	padding: 15px 0;
+	border-bottom: 1px solid #EAEAEA;
+	.star-rating {
+		padding-bottom: 8px;
+	}
 }
 
-.review_title{
-  margin: 0 0 20px 0;
+.navbar{
+-webkit-box-shadow: -3px 26px 11px -22px rgba(0,0,0,0.91);
+-moz-box-shadow: -3px 26px 11px -22px rgba(0,0,0,0.91);
+box-shadow: -3px 26px 11px -22px rgba(0,0,0,0.91);
 }
-.reviews{
-  padding: 15px 0;
-  border-bottom: 1px solid #EAEAEA;
+footer {
+	-webkit-box-shadow: 0px -1px 6px 2px rgba(0,0,0,1);
+-moz-box-shadow: 0px -1px 6px 2px rgba(0,0,0,1);
+box-shadow: 0px -1px 6px 2px rgba(0,0,0,1);
+		border-radius: 0px;
+}
+
+.thumbnail{
+	border-color: #fabf5f;
+	background-color: #fea71b;
+	padding: 1px;
+	-webkit-box-shadow: 0px -1px 6px 2px rgba(0,0,0,1);
+	-moz-box-shadow: 0px -1px 6px 2px rgba(0,0,0,1);
+	box-shadow: 0px -1px 6px 2px rgba(0,0,0,1);
+
+}
+
+.navbar-brand,a{
+	color:black;
+}
+.navbar-brand :hover{
+	color:black;
+}
+.nav > li > a:hover{
+    background-color:#fea71b;
+}
+.nav > li > a:active{
+    background-color:#fea71b;
+}
+
+.revieww{
+	background-color: #fea71b;
+	text-decoration: none;
 }
