@@ -10,32 +10,36 @@
       </ul>
     </div>
   <% end %>
-
-  <div class="field">
-    <%= f.label :title %><br>
+  <div class="container">
+      <div class="row">
+  		<form role="form" class="col-md-9 go-right">
+  <div class="form-group">
+    <%= f.label :title %> <br>
     <%= f.text_field :title %>
   </div>
-  <div class="field">
+  <div class="form-group">
     <%= f.label :description %><br>
     <%= f.text_area :description %>
   </div>
-  <div class="field">
+  <div class="form-group">
     <%= f.label :movie_length %><br>
     <%= f.text_field :movie_length %>
   </div>
-  <div class="field">
+  <div class="form-group">
     <%= f.label :director %><br>
     <%= f.text_field :director %>
   </div>
-  <div class="field">
+  <div class="form-group">
     <%= f.label :rating %><br>
     <%= f.text_field :rating %>
   </div>
-  <div class="field">
+  <div class="form-group">
     <%= f.label :image %><br>
     <%= f.file_field :image %>
   </div>
   <div class="actions">
     <%= f.submit %>
   </div>
+</div>
+</div>
 <% end %>
